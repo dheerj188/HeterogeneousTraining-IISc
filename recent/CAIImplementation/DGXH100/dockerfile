@@ -1,0 +1,4 @@
+FROM pytorch/pytorch:2.4.0-cuda12.4-cudnn9-devel
+RUN pip install --no-cache-dir datasets transformers colossalai
+# RUN python -c "from datasets import load_dataset; load_dataset('wikipedia', '20220301.en', split='train', cache_dir='/workspace/raid/cdsdhe/wikipedia_data',trust_remote_code=True)"
+
